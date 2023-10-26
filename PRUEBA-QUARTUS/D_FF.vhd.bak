@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+use ieee.std_logic.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity D_FF is 
+	port (D,clk: in std_logic;
+			Q: in out std_logic);
+end D_FF
+
+architecture flipflop of D_FF is
+	BEGIN
+		process(clk)
+		D=Q;
+	END process;
+end architecture;
